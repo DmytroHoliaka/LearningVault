@@ -1,0 +1,19 @@
+﻿.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column {
+ background: lightblue;
+  width: 50px;
+}
+
+.second-column {
+  background: lightpink;
+  flex: 1;
+}
+
+.third-column {
+  background: lightblue;
+  width: 75px;
+}

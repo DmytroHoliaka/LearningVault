@@ -1,0 +1,17 @@
+﻿.container {
+  background: rgb(33, 33, 32);
+  padding: 20px 15px;
+  width: 400px;
+}
+
+.title {
+  font: bold 24px Arial;
+  color: rgb(255, 254, 255);
+  margin: 0 0 15px 0;
+}
+
+.content {
+  font: 18px/24px Arial;
+  color: rgb(153, 154, 153);
+  margin: 15px 0 0 0;
+}

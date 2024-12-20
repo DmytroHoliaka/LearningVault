@@ -1,0 +1,26 @@
+﻿body {
+  height: 3000px;
+}
+
+.window {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  
+  background: rgb(128, 128, 128);
+  height: 180px;
+  width: 320px;
+}
+
+.close-button {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  
+  font: 20px Arial;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+}

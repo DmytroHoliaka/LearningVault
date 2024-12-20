@@ -1,0 +1,53 @@
+﻿.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-line {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+
+.user-picture {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.user-info {
+  margin: 0 auto 0 10px;
+}
+
+.name {
+  font: 600 20px Arial;
+  margin: 0 0 4px 0;
+}
+
+.status {
+  font: 16px Arial;
+  color: rgb(128, 128, 128);
+  margin: 4px 0 4px 0;
+}
+
+.popularity {
+  font: 16px "Times New Roman";
+  color: rgb(128, 128, 128);
+  margin: 4px 0 0 0;
+}
+
+.follow-button {
+  font: bold 18px Arial;
+  background: rgb(64, 147, 238);
+  color: rgb(255, 255, 255);
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}

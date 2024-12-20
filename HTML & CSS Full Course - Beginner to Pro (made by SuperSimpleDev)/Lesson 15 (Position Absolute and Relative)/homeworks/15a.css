@@ -1,0 +1,14 @@
+﻿body {
+  height: 3000px;
+}
+
+.close-button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: black;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 100px;
+  border: none;
+}

@@ -1,0 +1,19 @@
+﻿p {
+    font-family: Montserrat, serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.caption {
+    font-size: 28px;
+    margin: 16px 0 0 0;
+}
+
+.caption > span {
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+﻿.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+}
+
+.first-column {
+  background: lightpink;
+  width: 100px;
+}
+
+.second-column {
+  background: lightblue;
+  width: 200px;
+}
+
+.second-column-first-row {
+
+}
+
+.second-column-second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 14px 0;
+}
+
+.second-column-second-row > div {
+  background: black;
+  color: white;
+}

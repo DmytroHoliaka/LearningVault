@@ -1,0 +1,41 @@
+﻿.navigation-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(113, 83, 172);
+  padding: 15px 25px;
+}
+
+.home-section {
+  font: bold 20px Arial;
+  color: rgb(255, 255, 255);
+}
+
+.search-section {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 100px;
+}
+
+.search-input {
+  width: 100%;
+  font: 16px Arial;
+  box-sizing: border-box;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+}
+
+.download-section {
+
+}
+
+.download-button {
+  font: 16px Arial;
+  background: rgb(113, 83, 172);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  padding: 10px 18px;
+}

@@ -1,0 +1,52 @@
+﻿.card {
+  display: inline-block;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5);
+  width: max-content;
+  margin: 6px;
+  padding: 0 0 0 0;
+  border-radius: 6px;
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px rgb(180, 163, 18);
+  transform: translate(0, -1.5%);
+}
+
+.card:active {
+  box-shadow: 0 0 20px rgb(17, 38, 100);
+  transform: scale(97%, 97%);
+}
+
+.user-image {
+  display: block;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-info {
+  padding: 6px 10px;
+}
+
+.user-name {
+  font: bold 18px Arial;
+  margin: 0 0 2px 0;
+}
+
+.friends-info {
+  font: 14px Arial;
+  color: rgb(128, 128, 128);
+  margin: 2px 0 10px 0;
+}
+
+.add-friend-button {
+  font: 14px Arial;
+  background-color: rgb(56, 116, 234);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+}

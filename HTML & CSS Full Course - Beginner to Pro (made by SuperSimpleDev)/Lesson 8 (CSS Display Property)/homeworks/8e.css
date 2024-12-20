@@ -1,0 +1,39 @@
+﻿input {
+  display: block;
+  padding: 16px 24px;
+  width: 400px;
+  font: 18px Arial;
+  background: rgb(240 240 240);
+  border: none;
+}
+
+button {
+  padding: 16px 24px;
+  border: none;
+  font: 18px Arial;
+}
+
+.title {
+  font: 38px Arial;
+  margin: 0 0 25px 0;
+}
+
+.pickup-textbox {
+  margin: 25px 0 8px 0;
+}
+
+.destination-textbox {
+  margin: 8px 0 25px 0;
+}
+
+.request-button {
+  margin: 25px 10px 0 0;
+  background: rgb(0 0 0);
+  color: rgb(255 255 255);
+}
+
+.schedule-button {
+  margin: 25px 0 0 10px;
+  background: rgb(240 240 240);
+  color: rgb(0 0 0);
+}

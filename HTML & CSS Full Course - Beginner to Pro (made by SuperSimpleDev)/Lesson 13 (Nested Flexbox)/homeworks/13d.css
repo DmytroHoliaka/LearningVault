@@ -1,0 +1,65 @@
+﻿.container {
+  width: max-content;
+  padding: 6px 10px 25px 15px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 0.4);
+  border-radius: 4px;
+}
+
+.category {
+  font: 12px Arial;
+  color: rgb(147, 147, 147);
+  margin: 0 0 10px 0;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-image-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.content-column {
+}
+
+.content-title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2px 0;
+}
+
+.content-title {
+  font: 800 16px Arial;
+  margin: 0 0 0 0;
+}
+
+.content-received-date {
+  font: 12px Arial;
+  color: rgb(147, 147, 147);
+  margin: 0 0 0 0;
+}
+
+.content-subtitle {
+  font: 600 14px Arial;
+  margin: 2px 0 2px 0;
+}
+
+.content-body {
+  font: 12px Arial;
+  color: rgb(147, 147, 147);
+  margin: 2px 0 0 0;
+}

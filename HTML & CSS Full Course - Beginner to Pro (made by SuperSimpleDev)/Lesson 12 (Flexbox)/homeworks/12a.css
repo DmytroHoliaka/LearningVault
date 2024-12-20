@@ -1,0 +1,14 @@
+﻿.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column {
+  background: lightblue;
+  width: 200px;
+}
+
+.second-column {
+  background: lightpink;
+  width: 70px;
+}

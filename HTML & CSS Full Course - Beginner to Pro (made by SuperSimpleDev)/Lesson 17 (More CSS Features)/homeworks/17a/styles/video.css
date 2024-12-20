@@ -1,0 +1,150 @@
+﻿.video-grid {
+  display: grid;
+  column-gap: 15px;
+  row-gap: 50px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.thumbnail-row {
+  margin: 0 0 8px 0;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.video-time {
+  font: 500 12px Roboto, Arial, sans-serif;
+  border-radius: 2px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+
+  padding: 4px;
+}
+
+.video-preview {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-info-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-picture {
+  display: inline-block;
+}
+
+.channel-picture:hover .channel-tooltip-container {
+  opacity: 1;
+}
+
+.video-info {
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 18px;
+}
+
+.channel-tooltip-container {
+  position: absolute;
+  bottom: -58px;
+  left: 0;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 0.4);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.15s;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 20px 10px 10px;
+}
+
+.channel-tooltip-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.channel-tooltip-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.channel-tooltip-name {
+  font: 600 14px Roboto, Arial, sans-serif;
+}
+
+.channel-tooltip-subscribers {
+  font: 13px Roboto, Arial, sans-serif;
+  color: rgb(99, 99, 99);
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.video-author {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin: 10px 0 4px 0;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 1023px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px){
+  .video-title, .channel-tooltip-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .channel-tooltip-subscribers {
+    font-size: 15px;
+  }
+
+  .video-author, .video-stats {
+    font-size: 14px;
+  }
+}

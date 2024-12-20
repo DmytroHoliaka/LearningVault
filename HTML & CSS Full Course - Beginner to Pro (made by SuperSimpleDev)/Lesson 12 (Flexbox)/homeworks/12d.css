@@ -1,0 +1,12 @@
+﻿.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: 1px solid rgb(90 90 90);
+}
+
+.flex-container > div {
+  background: lightpink;
+}

@@ -1,0 +1,24 @@
+﻿.container {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+
+.first-column {
+  width: 100px;
+  background: lightpink;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-column-content {
+  background: black;
+  color: white;
+}
+
+.second-column {
+  width: 200px;
+  background: lightblue;
+}

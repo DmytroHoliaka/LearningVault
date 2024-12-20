@@ -1,0 +1,56 @@
+﻿.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 30px;
+}
+
+.card {
+  box-shadow: 1px 1px 6px rgb(0 0 0 / 0.5);
+  width: 300px;
+  vertical-align: top;
+}
+
+.card-image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-description {
+  padding: 12px 8px;
+}
+
+.user-name {
+  font: 600 20px Arial;
+  margin: 0 0 8px 0;
+}
+
+.mutual-friends-row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  column-gap: 8px;
+  margin: 8px 0 10px 0;
+}
+
+.mutual-friends-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.mutual-friends-count {
+  font: 16px Arial;
+  color: rgb(128, 128, 128);
+}
+
+.add-friend-button {
+  font: 18px Arial;
+  background: rgb(57, 116, 233);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+}

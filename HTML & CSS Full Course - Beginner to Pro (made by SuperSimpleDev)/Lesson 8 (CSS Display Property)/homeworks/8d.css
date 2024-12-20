@@ -1,0 +1,42 @@
+﻿input{
+  font-size: 18px;
+  padding: 10px 16px;
+  border: 2px solid rgb(182, 182, 182);
+  border-radius: 10px;
+}
+
+.names-container {
+  display: block;
+  width: 300px;
+  margin: 12px auto;
+}
+
+.first-name {
+  margin: 0 0 0 0;
+  width: 110px;
+}
+
+.second-name {
+  margin: 0 0 0 0;
+  width: 110px;
+}
+
+.email {
+  display: block;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 12px auto;
+}
+
+.sign-up {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: rgb(56, 116, 234);
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  padding: 12px 16px;
+  margin: 12px auto;
+}

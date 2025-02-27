@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+  url('fonts/kaushanscript-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand Dash';
+  src: url('fonts/quicksand_dash-webfont.woff2') format('woff2'),
+  url('fonts/quicksand_dash-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/quicksand-bold-webfont.woff2') format('woff2'),
+  url('fonts/quicksand-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/quicksand-bolditalic-webfont.woff2') format('woff2'),
+  url('fonts/quicksand-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/quicksand-italic-webfont.woff2') format('woff2'),
+  url('fonts/quicksand-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/quicksand-light-webfont.woff2') format('woff2'),
+  url('fonts/quicksand-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/quicksand-lightitalic-webfont.woff2') format('woff2'),
+  url('fonts/quicksand-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}

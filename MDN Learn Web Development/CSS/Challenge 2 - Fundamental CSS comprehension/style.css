@@ -1,0 +1,79 @@
+/* General page styles */
+/* Specificity: 0-0-1 */
+body {
+  margin-left: 0;
+}
+
+/* Specificity: 0-0-1 */
+html {
+  font-family: 'Helvetica neue', Arial, sans-serif;
+  font-size: 10px;
+  background-color: #ccc;
+  box-sizing: border-box;
+}
+
+/* Specificity: 0-0-0 */
+*, 
+*::after, 
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+/* ---- Card container styles ---- */
+/* Specificity: 0-1-0 */
+.card {
+  margin: 5em auto;
+  width: 35em;
+  height: 22rem;
+  background: rgb(240, 0, 0);
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+
+  overflow: hidden;
+}
+
+/* ---- Header and footer styles ---- */
+/* Specificity: 0-1-1 */
+.card header, 
+.card footer {
+  height: 5em;
+  line-height: 3em;
+  padding: 1em;
+}
+
+.card header {
+}
+
+/* Specificity: 0-1-2 */
+.card header h2 {
+  font-size: 2em;
+}
+
+/* Specificity: 0-1-1 */
+.card footer {
+}
+
+/* Specificity: 0-1-2 */
+.card footer p {
+  font-size: 1.5em;
+}
+
+/* ---- Main business card content styles ---- */
+/* Specificity: 0-1-1 */
+.card article {
+  height: 12em;
+  background: rgb(0 0 0 / 0.3);
+  color: rgb(230, 230, 230);
+}
+
+/* Specificity: 0-1-2 */
+.card article p {
+  padding: 1em;
+}
+
+/* Specificity: 0-1-2 */
+.card article img {
+  max-height: 100%;
+  float: right;
+}

@@ -1,0 +1,9 @@
+'use strict';
+
+let str = "Hello";
+
+str.test = 5;
+
+alert(str.test);
+
+// Output: undefined or an error (strict mode)

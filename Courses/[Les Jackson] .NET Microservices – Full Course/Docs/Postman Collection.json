@@ -1,0 +1,730 @@
+{
+	"info": {
+		"_postman_id": "4b73e7c7-0a2b-4f6a-98b0-8f71e7c7983b",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37382060"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "PlatformService",
+					"item": [
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5232/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5232",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an individual platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5232/api/platforms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5232",
+									"path": [
+										"api",
+										"platforms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5232/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5232",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CommandsService",
+					"item": [
+						{
+							"name": "TestRequest",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5151/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5151",
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5151/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5151",
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all commands for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5151/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5151",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get command for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5151/api/c/platforms/1/commands/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5151",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a command for a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"HowTo\": \"Push a docker container to hub\",\r\n    \"CommandLine\": \"docker image push <image>\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5151/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5151",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Docker",
+			"item": [
+				{
+					"name": "PlatformService",
+					"item": [
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an individual platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/platforms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"platforms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CommandsService",
+					"item": [
+						{
+							"name": "TestRequest",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all commands for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get command for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/c/platforms/1/commands/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a command for a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"HowTo\": \"Push a docker container to hub\",\r\n    \"CommandLine\": \"docker image push <image>\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Kubernetes",
+			"item": [
+				{
+					"name": "PlatformService (Nginx)",
+					"item": [
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://acme.com/api/platforms",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an individual platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://acme.com/api/platforms/1",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"platforms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://acme.com/api/platforms",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CommandsService (Nginx)",
+					"item": [
+						{
+							"name": "TestRequest",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://acme.com/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://acme.com/api/c/platforms",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"c",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all commands for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://acme.com/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get command for platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://acme.com/api/c/platforms/1/commands/1",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a command for a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"HowTo\": \"Push a docker container to hub\",\r\n    \"CommandLine\": \"docker image push <image>\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://acme.com/api/c/platforms/1/commands",
+									"protocol": "http",
+									"host": [
+										"acme",
+										"com"
+									],
+									"path": [
+										"api",
+										"c",
+										"platforms",
+										"1",
+										"commands"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PlatformService (Node Port)",
+					"item": [
+						{
+							"name": "Get all platforms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:31758/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "31758",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an individual platform",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:31758/api/platforms/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "31758",
+									"path": [
+										"api",
+										"platforms",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a platform",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:31758/api/platforms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "31758",
+									"path": [
+										"api",
+										"platforms"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

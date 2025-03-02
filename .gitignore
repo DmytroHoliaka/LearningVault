@@ -8,6 +8,8 @@ dist
 tmp
 out-tsc
 bazel-out
+bin
+obj
 
 # Node
 node_modules
@@ -27,3 +29,6 @@ Desktop.ini
 
 # Miscellaneous
 .angular/
+
+# Configurations
+*.user

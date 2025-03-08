@@ -36,4 +36,4 @@ Desktop.ini
 *.DotSettings
 
 # Data
-Courses/[Milan Jovanovic] Pragmatic Clean Architecture/*/.containers/
+.containers/

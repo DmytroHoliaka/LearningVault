@@ -1,0 +1,14 @@
+services:
+  bookify.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5000
+      - ASPNETCORE_HTTPS_PORTS=5001
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/Bookify.Api.pfx
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${USERPROFILE}/.aspnet/Https:/home/app/.aspnet/https:ro

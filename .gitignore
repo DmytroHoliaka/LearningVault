@@ -26,12 +26,14 @@ Desktop.ini
 .settings/
 .vscode/
 .idea/
+.vs/
 
 # Miscellaneous
 .angular/
 
 # Configurations
 *.user
+*.DotSettings
 
 # Data
-/Courses/[Milan Jovanovic] Pragmatic Clean Architecture/*/.container
+Courses/[Milan Jovanovic] Pragmatic Clean Architecture/*/.containers/

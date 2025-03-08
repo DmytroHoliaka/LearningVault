@@ -32,3 +32,6 @@ Desktop.ini
 
 # Configurations
 *.user
+
+# Data
+/Courses/[Milan Jovanovic] Pragmatic Clean Architecture/*/.container
